@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "",
   "license": "ISC",
@@ -21,8 +22,13 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
+    "webpack-dev-server": "^3.11.0",
     "webpack-pwa-manifest": "^4.1.1",
     "workbox-webpack-plugin": "^4.3.1"
+  },
+  "resolutions": {
+    "minimist": "^1.2.3",
+    "@hapi/hoek": "^9.0.3",
+    "kind-of": "^6.0.3"
   }
 }
